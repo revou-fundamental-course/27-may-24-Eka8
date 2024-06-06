@@ -8,13 +8,90 @@
 </head>
 <body>
     <nav>
-        <div class="logo-icon"></div>
+        <div class="logo-icon" style="background-image: url(assets/ikon.jpg);"></div>
         <section>
-            <a class="nav-item">HOME</a>
-            <a class="nav-item"></a>
-            <a class="nav-item">HOME</a>
+            <a class="nav-item" href="#home">HOME</a>
+            <a class="nav-item" href="#menu">MENU</a>
+            <a class="nav-item" href="#message-us">MESSAGE US</a>
         </section>
 
     </nav>
+
+    <hr>
+
+    <section>
+       <!--home--> 
+       <section id="home"> 
+            <header>
+                <h1> Selamat datang di web pertama kami</h1>
+            </header>
+            
+            <article>
+                <p>adalah web pertama yang saya buat untuk course online bersama RevoU </p>
+
+                <div class="banner-container">
+                    <div class="banner-img" style="background-image: url(assets/blue.jpg);"></div>
+                    <!--<div class="banner-img" style="background-image: url(assets/book.jpg);"></div>
+                    <div class="banner-img" style="background-image: url(assets/wave.jpg);"></div>-->
+                </div>
+            </article>
+       </section>
+
+       <hr>
+
+       <!--menu-->
+       <section id="menu">
+            <header>
+                <h1> MENU </h1>
+            </header>
+
+        <article class="menu-list">
+            <div style="text-align: center;" >
+                <div class="logo-icon" style="background-image: url(assets/salad.jpg); border: 2px solid black; border-radius: 50%;" ></div>
+                <h5>Salad</h5>
+            </div>
+            <div style="text-align: center;">
+                <div class="logo-icon" style="background-image: url(assets/pancakes.jpg); border: 2px solid black; border-radius: 50%;"></div>
+                <h5>Pancakes</h5>
+            </div>
+            <div style="text-align: center;" >
+                <div class="logo-icon" style="background-image: url(assets/waffle.jpg); border: 2px solid black; border-radius: 50%;"></div>
+                <h5>Waffle</h5>
+            </div>
+        </article>
+       </section>
+
+       <hr>
+
+       <!--Message Us-->
+       <section id="message-us">
+            <header>
+                <h1> MESSAGE US </h1>
+            </header>
+
+            <section class="message-us-section">
+                <!--Form-->
+                <section>
+                    <form>
+                        <label> Nama: </label>
+                        <input id="name-input"/>
+                        <button type="button" onclick="formValidation()"> Kirim</button>
+                    </form>
+                </section>
+
+                <!--Result-->
+                <section class="result-container">
+                    <div class="form-result"></div>
+                </section>
+            </section>
+       </section>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
